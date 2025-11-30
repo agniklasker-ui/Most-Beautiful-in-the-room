@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f3e7e9 0%, #e3eeff 100%);
+            text-align: center;
+            margin: 0;
+            padding: 50px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .birthday-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #ff6f91;
+            margin-bottom: 10px;
+            font-family: 'Georgia', serif;
+            letter-spacing: 2px;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #6a5acd;
+            margin-bottom: 30px;
+            font-family: 'Georgia', serif;
+        }
+
+        .bouquet-container {
+            position: relative;
+            display: inline-block;
+            margin: 20px auto;
+        }
+
+        .bouquet {
+            width: 180px;
+            height: auto;
+            opacity: 0;
+            transform: scale(0.1);
+            filter: drop-shadow(0 0 15px rgba(255, 182, 193, 0.5));
+            animation: bloom 4s ease-out forwards;
+        }
+
+        .glow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 180px;
+            height: auto;
+            opacity: 0;
+            transform: scale(0.1);
+            filter: blur(15px) brightness(1.5);
+            animation: glowEffect 4s ease-out forwards;
+        }
+
+        @keyframes bloom {
+            0% {
+                opacity: 0;
+                transform: scale(0.1);
+            }
+
+            50% {
+                opacity: 0.6;
+                transform: scale(1.1);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes glowEffect {
+            0% {
+                opacity: 0;
+                transform: scale(0.1);
+            }
+
+            50% {
+                opacity: 0.4;
+                transform: scale(1.1);
+            }
+
+            100% {
+                opacity: 0.4;
+                transform: scale(1);
+            }
+        }
+
+        .message {
+            font-size: 18px;
+            color: #333;
+            font-family: 'Georgia', serif;
+            margin-top: 30px;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 36px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            .bouquet {
+                width: 140px;
+            }
+
+            .glow {
+                width: 140px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="birthday-container">
+        <h1>Happy Birthday!</h1>
+        <h2>Wishing you a day full of love and joy</h2>
+
+        <div class="bouquet-container">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/024/264/326/small/hand-drawn-flower-bouquet-in-doodle-style-vector.jpg"
+                alt="Flower Bouquet" class="bouquet">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/024/264/326/small/hand-drawn-flower-bouquet-in-doodle-style-vector.jpg"
+                alt="Glow Effect" class="glow">
+        </div>
+
+        <p class="message">Hope your day is filled with sunshine, smiles, and beautiful moments!</p>
+        <p>You are such a great girl AniKa, I hope u shine brighter in your life <br>Many Many Happy Returns of the day!!!
+        </p>
+        <p>I may not get what you are going through AniKa,<br>In any case, I'll be there anytime you ask for me.</p>
+        <br>
+        <p>From,<br>A<br></p>
+    </div>
+
+</body>
+
+</html>
